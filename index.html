@@ -4,60 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" href="CSS/index.css" rel="stylesheet">
     
-    <title>GigaPet</title>
+    <link rel="stylesheet" href="CSS/index.css" rel="stylesheet">
+
+    <title>Document</title>
+
+
 </head>
 <body>
-    <nav>
-        <h1>GigaPet</h1>
-        <a href="#">About Us</a>
-        <a href="#">Login</a>
-        <a href="#">Sign Up</a>
-    </nav>
-    <div class="container">
+    <div>
         <header>
-            <div class="header-content">
-                <h1>GigaPet</h1>
-                <p>Description</p>
-                <div class="sign-up">
-                    <input type="text" placeholder='your email here'>
-                    <button>Sign Up!</button>
-                </div>
-            </div>
-            <div>   
-                <img src="./assets/parent-and-child.jpg" alt="Background Image">
+            <h1>Logo</h1>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
             </div>
         </header>
-        <div class="features-content">
-            <section>
-                <div class="img">
-                    <img src="assets/gaelle-marcel-1604902-unsplash.jpg" alt="Image 1">
-                    <p>Description</p>
-                </div>
-                <div>
-                    <img src="assets/jesse-schoff-1603596-unsplash.jpg" alt="Image 2">
-                    <p>Description</p>
-                </div>
-                <div>
-                    <img src="assets/bence-balla-schottner-1603443-unsplash.jpg" alt="Image 3">
-                    <p>Description</p>
+        <main>
+            <section class="hero">
+                <div class="hero-section">
+                    <div class="hero-copy">
+                        <h2>Get your child to eat healthier</h2>
+                        <p>By tracking your child's food, you can watch their pet grow!</p>
+                        <form action="#">
+                            <div>
+                                <input type="text" placeholder="Your email...">
+                            </div>
+                            <div>
+                                <button>Sign Up!</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="hero-img">
+                        <img src="assets/codepen.png" alt="">
+                    </div>
                 </div>
             </section>
-            <section class="end-content">
-                <img src="assets/markus-spiske-1604570-unsplash.jpg" alt="Image 4">
-                <h2>Something</h2>
-                <p>Description</p>
+            <section class="welcome">
+                <div>
+                    <div class="welcome-content">
+                        <h2>Welcome to GigaPet</h2>
+                        <p>Track your child's food intake. Watch your pet grow as your child eats healthy. Eat bad, and your pet also feels bad.</p>
+                    </div>
+                    <div>
+                        <img src="assets/codepen.png" alt="">
+                    </div>
+                </div>
             </section>
-        </div>
+            <section class="features">
+                <div>
+                    <div>
+                        <h2>Features</h2>
+                    </div>
+                    <div class="features-wrap">
+                        <div>
+                            <div>
+                                <img src="assets/codepen.png" alt="">
+                            </div>
+                            <h4>Easily create food entries</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="assets/codepen.png" alt="">
+                            </div>
+                            <h4>Displays food intake based on category</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <h1>Logo</h1>
+                <div class="nav"><a href="#">About Us</a></div> 
+                <div class="copyright">© 2019 GigaPet, all rights reserved</div>
+            </div>
+        </footer>
     </div>
-    <footer>
-        <div class="footer-section">
-            <h1>Logo</h1>
-            <a href="#">About Us</a>
-            <p>Copyright</p>
-        </div>
-    </footer>
 </body>
 </html>
