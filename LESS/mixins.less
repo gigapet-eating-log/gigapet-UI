@@ -15,14 +15,14 @@
     margin: 0 auto;
 }
 
-.flex-wrapping(@justify) {
+.flex-wrapping {
     display: flex;
     flex-wrap: wrap;
-    justify-content: @justify;
 }
 
 .text-centering {
-    .flex-wrapping(center);
+    .flex-wrapping;
+    justify-content: center;
     text-align: center;
 }
 

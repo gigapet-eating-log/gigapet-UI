@@ -13,6 +13,10 @@
   width: 100%;
   margin: 0 auto;
 }
+.flex-wrapping {
+  display: flex;
+  flex-wrap: wrap;
+}
 .text-centering {
   display: flex;
   flex-wrap: wrap;
@@ -248,18 +252,24 @@ footer ul li a {
 @media (min-width: 768px) {
   footer .footer-content {
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
+    width: 100%;
   }
   footer .footer-content h1 {
     display: inline-flex;
-    flex: 50%;
+    flex: 100%;
     justify-content: flex-start;
   }
-  footer .footer-content ul {
+  footer .footer-content nav {
     display: inline-flex;
     flex: 50%;
     justify-content: flex-end;
+  }
+  footer .footer-content nav a {
+    text-decoration: none;
+    color: black;
+    line-height: 1.5;
+    font-size: 1.6rem;
   }
   footer .footer-content .copyright {
     display: inline-flex;
