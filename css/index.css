@@ -201,6 +201,20 @@ header ul li a {
   justify-content: center;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .hero .hero-section {
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  .hero .hero-section .hero-copy {
+    width: 49%;
+  }
+  .hero .hero-section .hero-img {
+    width: 49%;
+  }
+}
 .welcome {
   display: flex;
   flex-wrap: wrap;
@@ -213,6 +227,12 @@ header ul li a {
   justify-content: center;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .features .features-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -224,4 +244,26 @@ footer ul li a {
   color: black;
   line-height: 1.5;
   font-size: 1.6rem;
+}
+@media (min-width: 768px) {
+  footer .footer-content {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  footer .footer-content h1 {
+    display: inline-flex;
+    flex: 50%;
+    justify-content: flex-start;
+  }
+  footer .footer-content ul {
+    display: inline-flex;
+    flex: 50%;
+    justify-content: flex-end;
+  }
+  footer .footer-content .copyright {
+    display: inline-flex;
+    flex: 50%;
+    justify-content: flex-start;
+  }
 }
