@@ -67,18 +67,32 @@ header {
 footer {
     .text-centering;
 
-    ul {
-        li {
-            a {
-                .ahref;
-            }
-        }
+    a {
+        .ahref
     }
 
     @media @tablet {
+        text-align: left;
+        justify-content: flex-start;
+
         .footer-content {
-            div {
-                display: inline;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+
+            .footer-nav {
+                flex: 50%;
+            }
+
+            .nav {
+                flex: 50%;
+                text-align: right;
+            }
+
+            .copyright {
+                flex: 50%;
             }
         }
     }

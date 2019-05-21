@@ -253,14 +253,32 @@ footer {
   justify-content: center;
   text-align: center;
 }
-footer ul li a {
+footer a {
   text-decoration: none;
   color: black;
   line-height: 1.5;
   font-size: 1.6rem;
 }
 @media (min-width: 768px) {
-  footer .footer-content div {
-    display: inline;
+  footer {
+    text-align: left;
+    justify-content: flex-start;
+  }
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+  footer .footer-content .footer-nav {
+    flex: 50%;
+  }
+  footer .footer-content .nav {
+    flex: 50%;
+    text-align: right;
+  }
+  footer .footer-content .copyright {
+    flex: 50%;
   }
 }
