@@ -1,6 +1,6 @@
-const navLinks = document.querySelectorAll('li');
+let navLinks = document.querySelectorAll('li');
 
-const menu = document.querySelector('.menu');
+let menu = document.querySelector('.menu');
 
 // function openMenu() {
 //     if (navLinks[1].style.display == 'block') {
