@@ -1,11 +1,33 @@
+a {
+    cursor: pointer;
+}
+
 header {
     background: blue;
     .paragraphHeight;
+
+    .logo-nav {
+        display: flex;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
     ul {
         li {
+            display: none;
+
             a {
                 .ahref;
             }
+
+        }
+        
+        .not-hidden {
+            display: block;
         }
     }
 
@@ -14,10 +36,18 @@ header {
         align-items: center;
         justify-content: space-between;
 
+        .menu {
+            display: none;
+        }
+
         .nav-links {
             ul {
                 li {
                     display: inline;
+
+                    a {
+                        display: inline;
+                    }
                 }
             }
         }
@@ -95,5 +125,13 @@ footer {
                 flex: 50%;
             }
         }
+    }
+}
+
+.team {
+    text-align: center;
+
+    @media @tablet {
+        .flex-wrapping;
     }
 }

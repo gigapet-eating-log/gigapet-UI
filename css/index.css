@@ -188,10 +188,24 @@ img {
   max-width: 100%;
   height: auto;
 }
+a {
+  cursor: pointer;
+}
 header {
   background: blue;
   line-height: 1.5;
   font-size: 1.6rem;
+}
+header .logo-nav {
+  display: flex;
+  cursor: pointer;
+}
+header .logo-nav a {
+  text-decoration: none;
+  color: black;
+}
+header ul li {
+  display: none;
 }
 header ul li a {
   text-decoration: none;
@@ -199,13 +213,22 @@ header ul li a {
   line-height: 1.5;
   font-size: 1.6rem;
 }
+header ul .not-hidden {
+  display: block;
+}
 @media (min-width: 768px) {
   header {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+  header .menu {
+    display: none;
+  }
   header .nav-links ul li {
+    display: inline;
+  }
+  header .nav-links ul li a {
     display: inline;
   }
 }
@@ -280,5 +303,14 @@ footer a {
   }
   footer .footer-content .copyright {
     flex: 50%;
+  }
+}
+.team {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
