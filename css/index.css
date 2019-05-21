@@ -199,6 +199,16 @@ header ul li a {
   line-height: 1.5;
   font-size: 1.6rem;
 }
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .nav-links ul li {
+    display: inline;
+  }
+}
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -210,7 +220,7 @@ header ul li a {
     width: 90%;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .hero .hero-section .hero-copy {
     width: 49%;
@@ -250,30 +260,7 @@ footer ul li a {
   font-size: 1.6rem;
 }
 @media (min-width: 768px) {
-  footer .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  footer .footer-content h1 {
-    display: inline-flex;
-    flex: 100%;
-    justify-content: flex-start;
-  }
-  footer .footer-content nav {
-    display: inline-flex;
-    flex: 50%;
-    justify-content: flex-end;
-  }
-  footer .footer-content nav a {
-    text-decoration: none;
-    color: black;
-    line-height: 1.5;
-    font-size: 1.6rem;
-  }
-  footer .footer-content .copyright {
-    display: inline-flex;
-    flex: 50%;
-    justify-content: flex-start;
+  footer .footer-content div {
+    display: inline;
   }
 }

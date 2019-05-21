@@ -10,7 +10,20 @@ header {
     }
 
     @media @tablet {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav-links {
+            ul {
+                li {
+                    display: inline;
+                }
+            }
+        }
     }
+}
+
 
 .hero {
     .text-centering;
@@ -20,7 +33,7 @@ header {
             width: 90%;
             display: flex;
             flex-wrap: nowrap;
-            justify-content: space-around;
+            justify-content: space-between;
 
             .hero-copy {
                 width: 49%;
@@ -64,22 +77,8 @@ footer {
 
     @media @tablet {
         .footer-content {
-            .flex-wrapping;
-            width: 100%;
-
-            h1 {
-                .inline-flexing(100%, flex-start);
-            }
-
-            nav {
-                .inline-flexing(50%, flex-end);
-                a {
-                    .ahref;
-                }
-            }
-
-            .copyright {
-                .inline-flexing(50%, flex-start);
+            div {
+                display: inline;
             }
         }
     }
