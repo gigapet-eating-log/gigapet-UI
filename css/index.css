@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'scribble_boxregular';
+  src: url('../assets/scribble_box_demo-webfont.woff2') format('woff2'), url('../assets/scribble_box_demo-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 .paragraphHeight {
   line-height: 1.5;
   font-size: 1.6rem;
@@ -166,10 +172,10 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'scribble_boxregular', sans-serif;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 10rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -191,10 +197,13 @@ img {
 a {
   cursor: pointer;
 }
+img {
+  margin: 20px 0;
+}
 header {
-  background: blue;
   line-height: 1.5;
   font-size: 1.6rem;
+  padding: 10px 80px;
 }
 header .logo-nav {
   display: flex;
@@ -229,16 +238,31 @@ header ul .not-hidden {
   }
   header .nav-links ul li {
     display: inline;
+    padding: 0 30px;
   }
   header .nav-links ul li a {
     display: inline;
   }
+}
+main {
+  margin: 30px;
+}
+section {
+  margin: 45px 15px;
 }
 .hero {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+}
+.hero .hero-copy {
+  opacity: 1;
+  transition: 0.7s opacity;
+}
+.hero .fade {
+  opacity: 0;
+  transition: none;
 }
 @media (min-width: 768px) {
   .hero .hero-section {
@@ -260,16 +284,31 @@ header ul .not-hidden {
   justify-content: center;
   text-align: center;
 }
+.welcome .welcome-content {
+  margin: 20px 20px;
+}
 .features {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
 }
+.features .content-1 {
+  margin: 20px 0;
+}
+.features .content-2 {
+  margin: 20px 0;
+}
 @media (min-width: 768px) {
   .features .features-wrap {
     display: flex;
     flex-wrap: nowrap;
+  }
+  .features .features-wrap .content-1 {
+    width: 65%;
+  }
+  .features .features-wrap .content-2 {
+    width: 65%;
   }
 }
 footer {
@@ -286,6 +325,7 @@ footer a {
 }
 @media (min-width: 768px) {
   footer {
+    padding: 10px 80px;
     text-align: left;
     justify-content: flex-start;
   }
@@ -334,4 +374,18 @@ footer a {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('NanumGothic'), url(https://fonts.gstatic.com/s/nanumgothic/v16/PN_3Rfi-oW3hYwmKDpxS7F_D-djb.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v8/iJWKBXyIfDnIV7nBrXk.ttf) format('truetype');
 }

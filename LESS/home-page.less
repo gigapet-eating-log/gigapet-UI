@@ -2,9 +2,13 @@ a {
     cursor: pointer;
 }
 
+img {
+    margin: @marginWelcome 0;
+}
+
 header {
-    background: blue;
     .paragraphHeight;
+    padding: @paddingWebsite;
 
     .logo-nav {
         display: flex;
@@ -46,6 +50,7 @@ header {
             ul {
                 li {
                     display: inline;
+                    padding: @paddingMenu;
 
                     a {
                         display: inline;
@@ -56,9 +61,26 @@ header {
     }
 }
 
+main {
+    margin: @marginMain;
+}
+
+section {
+    margin: @marginSection;
+}
 
 .hero {
     .text-centering;
+
+    .hero-copy {
+        opacity: 1;
+        transition: 0.7s opacity;
+    }
+    
+    .fade {
+        opacity: 0;
+        transition: none;
+    }
 
     @media @tablet {
         .hero-section {
@@ -76,28 +98,40 @@ header {
                 width: 49%;
             }
         }
-
-        @media @desktop {
-            .hero-img {
-
-            }
-        }
     }
 }
 
 .welcome {
     .text-centering;
 
-
+    .welcome-content {
+        margin: @marginWelcome @marginWelcome;
+    }
 }
 
 .features {
     .text-centering;
 
+    .content-1 {
+        margin: @marginWelcome 0;
+    }
+
+    .content-2 {
+        margin: @marginWelcome 0;
+    }
+
     @media @tablet {
         .features-wrap {
             display: flex;
             flex-wrap: nowrap;
+
+            .content-1 {
+                width: 65%;
+            }
+
+            .content-2 {
+                width: 65%;
+            }
         }
     }
 }
@@ -110,6 +144,7 @@ footer {
     }
 
     @media @tablet {
+        padding: @paddingWebsite;
         text-align: left;
         justify-content: flex-start;
 

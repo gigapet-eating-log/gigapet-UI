@@ -8,4 +8,3 @@ function openMenu() {
 }
 
 menu.addEventListener('click', openMenu);
-
