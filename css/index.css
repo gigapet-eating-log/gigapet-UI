@@ -302,6 +302,10 @@ section {
   -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
   clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
 }
+.hero .hero-section form button a {
+  text-decoration: none;
+  color: black;
+}
 .hero .hero-section .fade {
   opacity: 0;
   transition: none;
