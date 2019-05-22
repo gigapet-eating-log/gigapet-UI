@@ -189,7 +189,7 @@ h5 {
   font-family: 'scribble_boxregular', sans-serif;
 }
 h1 {
-  font-size: 10rem;
+  font-size: 9rem;
 }
 h2 {
   font-size: 4.8rem;
@@ -264,9 +264,8 @@ header ul .not-hidden {
   }
 }
 .emphasize {
-  background: #9893DA;
-  border: 1px solid black;
-  border-radius: 10px;
+  border: 1px solid #9893DA;
+  border-radius: 1rem;
   padding: 10px 20px !important;
 }
 main {
@@ -281,11 +280,29 @@ section {
   justify-content: center;
   text-align: center;
 }
-.hero .hero-copy {
+.hero .hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hero .hero-section .hero-copy {
   opacity: 1;
   transition: 0.7s opacity;
 }
-.hero .fade {
+.hero .hero-section .hero-copy button {
+  padding: 10px 20px;
+  border-radius: 1rem;
+  font-size: 2.4rem;
+  background: #CBC5EA;
+  font-family: 'scribble_boxregular';
+}
+.hero .hero-section .hero-img {
+  margin-top: 20px;
+  background: #9893DA;
+  -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+.hero .hero-section .fade {
   opacity: 0;
   transition: none;
 }
@@ -310,7 +327,10 @@ section {
   text-align: center;
 }
 .welcome .welcome-content {
-  margin: 20px 20px;
+  margin: 0 20px;
+}
+.welcome img {
+  margin: 0;
 }
 .features {
   display: flex;
@@ -328,12 +348,13 @@ section {
   .features .features-wrap {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-around;
   }
   .features .features-wrap .content-1 {
-    width: 65%;
+    width: 40%;
   }
   .features .features-wrap .content-2 {
-    width: 65%;
+    width: 40%;
   }
 }
 footer {
@@ -341,6 +362,11 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  background: #4F1271;
+  padding: 10px 80px;
+}
+footer .footer-nav h3 {
+  padding: 0;
 }
 footer .footer-nav a {
   text-decoration: none;
@@ -354,7 +380,6 @@ footer .nav a {
 }
 @media (min-width: 768px) {
   footer {
-    padding: 10px 80px;
     text-align: left;
     justify-content: flex-start;
   }

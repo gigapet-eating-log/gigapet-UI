@@ -63,9 +63,8 @@ header {
 }
 
 .emphasize {
-    background: @color3;
-    border: 1px solid black;
-    border-radius: 10px;
+    border: 1px solid @color3;
+    border-radius: 1rem;
     padding: @buttonPadding !important;
 }
 
@@ -80,14 +79,35 @@ section {
 .hero {
     .text-centering;
 
-    .hero-copy {
-        opacity: 1;
-        transition: 0.7s opacity;
-    }
-    
-    .fade {
-        opacity: 0;
-        transition: none;
+    .hero-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .hero-copy {
+            opacity: 1;
+            transition: 0.7s opacity;
+
+            button {
+                padding: @buttonPadding;
+                border-radius: 1rem;
+                font-size: 2.4rem;
+                background: @color2;
+                font-family: 'scribble_boxregular';
+            }
+        }
+
+        .hero-img {
+            margin-top: 20px;
+            background: @color3;
+            -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+        }
+        
+        .fade {
+            opacity: 0;
+            transition: none;
+        }
     }
 
     @media @tablet {
@@ -113,7 +133,11 @@ section {
     .text-centering;
 
     .welcome-content {
-        margin: @marginWelcome @marginWelcome;
+        margin: 0 @marginWelcome;
+    }
+
+    img {
+        margin: 0;
     }
 }
 
@@ -132,13 +156,14 @@ section {
         .features-wrap {
             display: flex;
             flex-wrap: nowrap;
+            justify-content: space-around;
 
             .content-1 {
-                width: 65%;
+                width: 40%;
             }
 
             .content-2 {
-                width: 65%;
+                width: 40%;
             }
         }
     }
@@ -148,6 +173,10 @@ footer {
     .text-centering;
 
     .footer-nav {
+        h3 {
+            padding: 0;
+        }
+
         a {
             text-decoration: none;
             color: black;
@@ -160,8 +189,10 @@ footer {
         }
     }
 
+    background: @color1;
+    padding: @paddingWebsite;
+
     @media @tablet {
-        padding: @paddingWebsite;
         text-align: left;
         justify-content: flex-start;
 
