@@ -285,6 +285,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 .hero .hero-section .hero-copy {
   opacity: 1;
