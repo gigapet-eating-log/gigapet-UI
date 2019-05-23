@@ -258,7 +258,7 @@ header ul .not-hidden {
   }
   header .nav-links ul li {
     display: inline;
-    padding: 0 3rem;
+    padding: 0 2.5rem;
   }
   header .nav-links ul li a {
     display: inline;
@@ -466,7 +466,7 @@ footer .nav a {
   .hvr-grow:hover,
   .hvr-grow:focus,
   .hvr-grow:active {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.05);
   }
 }
