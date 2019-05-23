@@ -1,0 +1,28 @@
+.team {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card {
+        width: 100%;
+        margin: @marginWelcome/2;
+        padding: @marginWelcome;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+
+    @media @tablet {
+        .flex-wrapping;
+
+        .card {
+            width: 45%;
+        }
+
+        @media @desktop {
+            .card {
+                width: 30%;
+            }
+        }
+    }
+}

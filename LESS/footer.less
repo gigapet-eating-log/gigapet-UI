@@ -1,0 +1,49 @@
+footer {
+    .text-centering;
+
+    .footer-nav {
+        h3 {
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+    
+    .nav {
+        a {
+            .ahref
+        }
+    }
+
+    background: @color1;
+    padding: @paddingWebsite;
+
+    @media @tablet {
+        text-align: left;
+        justify-content: flex-start;
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+
+            .footer-nav {
+                flex: 50%;
+            }
+
+            .nav {
+                flex: 50%;
+                text-align: right;
+            }
+
+            .copyright {
+                flex: 50%;
+            }
+        }
+    }
+}
