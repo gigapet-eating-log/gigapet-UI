@@ -26,6 +26,7 @@ header {
     ul {
         li {
             display: none;
+            padding: @buttonPadding;
 
             a {
                 .ahref;
@@ -38,7 +39,7 @@ header {
         }
     }
 
-    @media @tablet {
+    @media @desktop {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -63,9 +64,11 @@ header {
 }
 
 .emphasize {
-    border: 1px solid @color3;
-    border-radius: 1rem;
-    padding: @buttonPadding !important;
+    a {
+        padding: @buttonPadding !important;
+        border: 1px solid @color3;
+        border-radius: 1rem;
+    }
 }
 
 main {
@@ -86,7 +89,7 @@ section {
 
         .hero-copy {
             opacity: 1;
-            transition: 0.7s opacity;
+            transition: 1s opacity;
 
             button {
                 padding: @buttonPadding;
@@ -256,13 +259,23 @@ footer {
 
     .card {
         width: 100%;
+        margin: @marginWelcome/2;
+        padding: @marginWelcome;
+        border: 1px solid grey;
+        border-radius: 10px;
     }
 
     @media @tablet {
         .flex-wrapping;
 
         .card {
-            width: 30%;
+            width: 45%;
+        }
+
+        @media @desktop {
+            .card {
+                width: 30%;
+            }
         }
     }
 }
